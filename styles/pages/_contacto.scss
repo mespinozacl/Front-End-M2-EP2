@@ -1,0 +1,67 @@
+.contacto {
+    text-align: center;
+    &__title {
+      //color: white;
+      font-size: 2rem;
+    }
+    &__text {
+      font-size: 1.4rem;
+    }
+    .section__list {
+      display: inline-flex;
+      justify-content: space-around;
+    }
+    .section__item {
+      list-style: none;
+      max-width: 250px;
+      margin:5px;
+      padding:5px;
+    }
+    .section__link {
+      //color: rgb(11, 212, 135);
+      text-decoration: none;
+    }
+    .contacto__label {
+        font-style: bold;
+    }
+    .contacto__input {
+        margin:5px;
+        padding:5px;
+    }
+    .contacto__button {
+        font-weight: bold;
+        background-color: #71bfd3;
+        color: whitesmoke;
+        transition: background-color 0.3s ease;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+    .contacto__button:hover {
+        background-color: #2eb3d4;
+        color: whitesmoke;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .contacto__title {
+      font-size: 1.6rem;
+    }
+    .contacto__text {
+      font-size: 1.2rem;
+    }
+    .section__list {
+      flex-direction: row;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contacto__title {
+      font-size: 1.2rem;
+    }
+    .contacto__text {
+      font-size: 1.0rem;
+    }
+    .section__list {
+        flex-direction: column;
+    }
+  }

@@ -1,0 +1,106 @@
+// Variables
+$primary-color: #3498db; // Color principal
+$bg-color: #bafffc; //Color Backgroud
+$font-stack: 'Arial', sans-serif; // Fuente
+
+// Estilos globales
+body {
+  background-color: $bg-color; // Color de fondo
+  padding: 10px;
+  font-family: $font-stack; // Fuente del cuerpo
+  color: #333; // Color del texto
+
+  // Estilo para los encabezados dentro del body
+  h1, h2, h3, h4 {
+    color: $primary-color; // Color de los encabezados
+    padding: 5px;
+  }
+
+  p {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  // Estilo para los enlaces
+  a {
+    color: $primary-color; // Color de los enlaces
+    text-decoration: none; // Sin subrayado
+
+    // Estilo para el hover
+    &:hover {
+      text-decoration: underline; // Subrayar en hover
+    }
+  }
+
+  // Estilo para el contenido principal
+  .content {
+    padding: 10px; // Espaciado interno
+    border: 1px solid #ddd; // Borde
+    border-radius: 5px; // Esquinas redondeadas
+    background-color: #fff; // Color de fondo del contenido
+  }
+
+  div {
+    position: relative;
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ddd; // Borde
+    border-radius: 5px; // Esquinas redondeadas
+  }
+}
+
+.home {
+  text-align: center;
+  &__title {
+    font-size: 2.0rem;
+  }
+  &__text {
+    font-size: 1.4rem;
+  }
+
+  .section__list {
+    display: inline-flex;
+    justify-content: space-around;
+  }
+  .section__item {
+    list-style: none;
+    max-width: 250px;
+    margin:5px;
+    padding:5px;
+  }
+  .section__link {
+    //color: rgb(11, 212, 135);
+    text-decoration: none;
+  }
+  .section__testimonio {
+    font-style: oblique;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .home__title {
+    font-size: 1.6rem;
+  }
+  .home__text {
+    //color: white;
+    font-size: 1.2rem;
+  }
+  .section__list {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .home__title {
+    font-size: 1.2rem;
+  }
+  .home__text {
+    //color: white;
+    font-size: 1.0rem;
+  }
+  .section__list {
+    flex-direction: column;
+  }
+}
